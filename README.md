@@ -9,7 +9,7 @@ git clone https://github.com/Navin-Jethwani-76/next-google-auth
 ### Installing Dependencies
 
 ```bash
-npm install
+cd next-google-auth && npm install
 ```
 
 **_NOTE:_** Follow [these steps](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid) to setup your **Web Application** in [Google Cloud Console](https://console.cloud.google.com).
