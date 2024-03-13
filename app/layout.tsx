@@ -19,7 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <main className="flex justify-center items-center w-full h-screen">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );
