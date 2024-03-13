@@ -1,26 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Steps to bootstrap next-google-auth
 
-## Getting Started
+### Clone the Repo
 
-First, run the development server:
+```bash
+git clone https://github.com/Navin-Jethwani-76/next-google-auth
+```
+
+### Installing Dependencies
+
+```bash
+npm install
+```
+
+**_NOTE:_** Follow [these steps](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid) to setup your **Web Application** in [Google Cloud Console](https://console.cloud.google.com).
+
+### Add env variables in `.env.local` file
+
+```bash
+GOOGLE_CLIENT_ID=your_client_id
+JWT_SECRET=your_jwt_secret
+AUTH_TOKEN_NAME=authToken #any other name you prefer
+```
+
+### Starting Dev Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you face any issues with this guide, [Open a New Issue on Github](https://github.com/Navin-Jethwani-76/next-google-auth/issues)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -29,8 +41,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy this app is to use the [Vercel Platform](https://vercel.com).
+
+[![Vercel](https://camo.githubusercontent.com/b9ff564d8c311812747f1aacea54cf703d850756f9179f9eff6899da20a701a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657263656c2d2532333030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76657263656c266c6f676f436f6c6f723d7768697465)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2FNavin-Jethwani-76%2Fnext-google-auth&showOptionalTeamCreation=false)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
